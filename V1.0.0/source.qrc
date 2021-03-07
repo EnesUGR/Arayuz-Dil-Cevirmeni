@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>img/145262842648941.png</file>
+    <file>img/book-guide-icon.png</file>
+    <file>img/change.png</file>
+    <file>img/english.png</file>
+    <file>img/exit3.ico</file>
+    <file>img/google-translate-icon.png</file>
+    <file>img/information.ico</file>
+    <file>img/question.ico</file>
+    <file>img/turkey.png</file>
+  </qresource>
+</RCC>
