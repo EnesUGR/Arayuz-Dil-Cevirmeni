@@ -22,7 +22,7 @@ class Ui_MainWindow(object):
         MainWindow.setMinimumSize(QSize(540, 520))
         MainWindow.setMaximumSize(QSize(540, 520))
         icon = QIcon()
-        icon.addFile(u":/icons/img/145262842648941.png", QSize(), QIcon.Normal, QIcon.Off)
+        icon.addFile(u":/icons/img/ui-translator.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.action_selectTR = QAction(MainWindow)
         self.action_selectTR.setObjectName(u"action_selectTR")

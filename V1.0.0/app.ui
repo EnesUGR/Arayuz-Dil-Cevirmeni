@@ -27,7 +27,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="source.qrc">
-    <normaloff>:/icons/img/145262842648941.png</normaloff>:/icons/img/145262842648941.png</iconset>
+    <normaloff>:/icons/img/ui-translator.ico</normaloff>:/icons/img/ui-translator.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="Line" name="line">
