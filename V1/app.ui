@@ -60,7 +60,7 @@
       <rect>
        <x>10</x>
        <y>20</y>
-       <width>291</width>
+       <width>330</width>
        <height>291</height>
       </rect>
      </property>
@@ -213,6 +213,19 @@ border: none;</string>
           </property>
          </widget>
         </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_allNext">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="toolTip">
+           <string>Tüm Çevirileri Otomatik Çeviri İle Onayla</string>
+          </property>
+          <property name="text">
+           <string>Otomatik</string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
      </layout>
@@ -220,9 +233,9 @@ border: none;</string>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>310</x>
+       <x>290</x>
        <y>20</y>
-       <width>201</width>
+       <width>221</width>
        <height>291</height>
       </rect>
      </property>
@@ -302,7 +315,8 @@ color: white;
 
 background-color: rgb(0, 255, 0);
 background-color: rgb(255, 255, 0);
-background-color: rgb(255, 0, 0);</string>
+background-color: rgb(255, 0, 0);
+</string>
     </property>
     <property name="text">
      <string/>
@@ -394,6 +408,26 @@ background-color: rgb(255, 0, 0);</string>
         </widget>
        </item>
        <item>
+        <widget class="QToolButton" name="toolButton_showLanguages">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="toolTip">
+          <string>Dil Kodlarını Göster</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="source.qrc">
+           <normaloff>:/icons/img/languages.png</normaloff>:/icons/img/languages.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
         <widget class="QToolButton" name="toolButton_confirmLangCodes">
          <property name="enabled">
           <bool>false</bool>
@@ -459,7 +493,7 @@ background-color: rgb(255, 0, 0);</string>
     </property>
     <widget class="QMenu" name="menuDili_De_i_tir">
      <property name="enabled">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="title">
       <string>Dili Değiştir</string>
@@ -469,7 +503,7 @@ background-color: rgb(255, 0, 0);</string>
     </widget>
     <addaction name="action_newTranslate"/>
     <addaction name="menuDili_De_i_tir"/>
-    <addaction name="actionOtomatik_eviriyi_Etkinle_tir"/>
+    <addaction name="action_enableAutoTranslate"/>
     <addaction name="separator"/>
     <addaction name="action_guide"/>
     <addaction name="action_about"/>
@@ -497,6 +531,9 @@ background-color: rgb(255, 0, 0);</string>
    </property>
   </action>
   <action name="action_selectEN">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
     <iconset resource="source.qrc">
      <normaloff>:/icons/img/english.png</normaloff>:/icons/img/english.png</iconset>
@@ -524,6 +561,9 @@ background-color: rgb(255, 0, 0);</string>
    </property>
   </action>
   <action name="action_newTranslate">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="icon">
     <iconset resource="source.qrc">
      <normaloff>:/icons/img/google-translate-icon.png</normaloff>:/icons/img/google-translate-icon.png</iconset>
@@ -544,15 +584,21 @@ background-color: rgb(255, 0, 0);</string>
     <string>Klavuz</string>
    </property>
   </action>
-  <action name="actionOtomatik_eviriyi_Etkinle_tir">
+  <action name="action_enableAutoTranslate">
    <property name="checkable">
     <bool>true</bool>
    </property>
-   <property name="enabled">
+   <property name="checked">
     <bool>false</bool>
    </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="text">
-    <string>Otomatik Çeviriyi Etkinleştir</string>
+    <string>Otomatik Çeviri (BETA)</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+A</string>
    </property>
   </action>
  </widget>

@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="icons">
+    <file>img/languages.png</file>
     <file>img/book-guide-icon.png</file>
     <file>img/ui-translator.ico</file>
     <file>img/ui-translator.png</file>
