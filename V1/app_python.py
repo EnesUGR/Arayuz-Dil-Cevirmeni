@@ -18,9 +18,9 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(540, 520)
-        MainWindow.setMinimumSize(QSize(540, 520))
-        MainWindow.setMaximumSize(QSize(540, 520))
+        MainWindow.resize(680, 590)
+        MainWindow.setMinimumSize(QSize(680, 590))
+        MainWindow.setMaximumSize(QSize(680, 590))
         icon = QIcon()
         icon.addFile(u":/icons/img/ui-translator.ico", QSize(), QIcon.Normal, QIcon.Off)
         MainWindow.setWindowIcon(icon)
@@ -65,21 +65,21 @@ class Ui_MainWindow(object):
         self.centralwidget.setObjectName(u"centralwidget")
         self.line = QFrame(self.centralwidget)
         self.line.setObjectName(u"line")
-        self.line.setGeometry(QRect(10, 120, 471, 16))
+        self.line.setGeometry(QRect(10, 120, 631, 16))
         self.line.setFrameShape(QFrame.HLine)
         self.line.setFrameShadow(QFrame.Sunken)
         self.groupBox = QGroupBox(self.centralwidget)
         self.groupBox.setObjectName(u"groupBox")
-        self.groupBox.setGeometry(QRect(10, 140, 521, 331))
-        self.layoutWidget = QWidget(self.groupBox)
-        self.layoutWidget.setObjectName(u"layoutWidget")
-        self.layoutWidget.setGeometry(QRect(10, 20, 330, 291))
-        self.verticalLayout_3 = QVBoxLayout(self.layoutWidget)
+        self.groupBox.setGeometry(QRect(10, 140, 660, 410))
+        self.verticalLayout_5 = QVBoxLayout(self.groupBox)
+        self.verticalLayout_5.setObjectName(u"verticalLayout_5")
+        self.horizontalLayout_6 = QHBoxLayout()
+        self.horizontalLayout_6.setObjectName(u"horizontalLayout_6")
+        self.verticalLayout_3 = QVBoxLayout()
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.plainTextEdit_fromLangText = QPlainTextEdit(self.layoutWidget)
+        self.plainTextEdit_fromLangText = QPlainTextEdit(self.groupBox)
         self.plainTextEdit_fromLangText.setObjectName(u"plainTextEdit_fromLangText")
         self.plainTextEdit_fromLangText.setEnabled(False)
         self.plainTextEdit_fromLangText.setFrameShape(QFrame.Box)
@@ -88,14 +88,14 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.plainTextEdit_fromLangText)
 
-        self.line_2 = QFrame(self.layoutWidget)
+        self.line_2 = QFrame(self.groupBox)
         self.line_2.setObjectName(u"line_2")
         self.line_2.setFrameShape(QFrame.HLine)
         self.line_2.setFrameShadow(QFrame.Sunken)
 
         self.verticalLayout_2.addWidget(self.line_2)
 
-        self.plainTextEdit_toLangText = QPlainTextEdit(self.layoutWidget)
+        self.plainTextEdit_toLangText = QPlainTextEdit(self.groupBox)
         self.plainTextEdit_toLangText.setObjectName(u"plainTextEdit_toLangText")
         self.plainTextEdit_toLangText.setEnabled(False)
         self.plainTextEdit_toLangText.setFrameShape(QFrame.Box)
@@ -108,13 +108,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3 = QHBoxLayout()
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
-        self.pushButton_backText = QPushButton(self.layoutWidget)
+        self.pushButton_backText = QPushButton(self.groupBox)
         self.pushButton_backText.setObjectName(u"pushButton_backText")
         self.pushButton_backText.setEnabled(False)
 
         self.horizontalLayout_3.addWidget(self.pushButton_backText)
 
-        self.spinBox_nowTextOrder = QSpinBox(self.layoutWidget)
+        self.spinBox_nowTextOrder = QSpinBox(self.groupBox)
         self.spinBox_nowTextOrder.setObjectName(u"spinBox_nowTextOrder")
         self.spinBox_nowTextOrder.setEnabled(False)
         self.spinBox_nowTextOrder.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
@@ -127,13 +127,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.spinBox_nowTextOrder)
 
-        self.label = QLabel(self.layoutWidget)
+        self.label = QLabel(self.groupBox)
         self.label.setObjectName(u"label")
         self.label.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_3.addWidget(self.label)
 
-        self.spinBox_totaTextNumber = QSpinBox(self.layoutWidget)
+        self.spinBox_totaTextNumber = QSpinBox(self.groupBox)
         self.spinBox_totaTextNumber.setObjectName(u"spinBox_totaTextNumber")
         self.spinBox_totaTextNumber.setEnabled(False)
         self.spinBox_totaTextNumber.setStyleSheet(u"background-color: rgba(0, 0, 0, 0);\n"
@@ -146,13 +146,13 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.spinBox_totaTextNumber)
 
-        self.pushButton_nextText = QPushButton(self.layoutWidget)
+        self.pushButton_nextText = QPushButton(self.groupBox)
         self.pushButton_nextText.setObjectName(u"pushButton_nextText")
         self.pushButton_nextText.setEnabled(False)
 
         self.horizontalLayout_3.addWidget(self.pushButton_nextText)
 
-        self.pushButton_allNext = QPushButton(self.layoutWidget)
+        self.pushButton_allNext = QPushButton(self.groupBox)
         self.pushButton_allNext.setObjectName(u"pushButton_allNext")
         self.pushButton_allNext.setEnabled(False)
 
@@ -161,15 +161,14 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addLayout(self.horizontalLayout_3)
 
-        self.layoutWidget1 = QWidget(self.groupBox)
-        self.layoutWidget1.setObjectName(u"layoutWidget1")
-        self.layoutWidget1.setGeometry(QRect(290, 20, 221, 291))
-        self.verticalLayout_4 = QVBoxLayout(self.layoutWidget1)
+
+        self.horizontalLayout_6.addLayout(self.verticalLayout_3)
+
+        self.verticalLayout_4 = QVBoxLayout()
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
-        self.verticalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_5 = QHBoxLayout()
         self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
-        self.textEdit_fromLangTexts = QTextEdit(self.layoutWidget1)
+        self.textEdit_fromLangTexts = QTextEdit(self.groupBox)
         self.textEdit_fromLangTexts.setObjectName(u"textEdit_fromLangTexts")
         self.textEdit_fromLangTexts.setEnabled(False)
         self.textEdit_fromLangTexts.setFrameShape(QFrame.WinPanel)
@@ -177,7 +176,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addWidget(self.textEdit_fromLangTexts)
 
-        self.textEdit_toLangTexts = QTextEdit(self.layoutWidget1)
+        self.textEdit_toLangTexts = QTextEdit(self.groupBox)
         self.textEdit_toLangTexts.setObjectName(u"textEdit_toLangTexts")
         self.textEdit_toLangTexts.setEnabled(False)
         self.textEdit_toLangTexts.setFrameShape(QFrame.WinPanel)
@@ -188,7 +187,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addLayout(self.horizontalLayout_5)
 
-        self.pushButton_TRANSLATE = QPushButton(self.layoutWidget1)
+        self.pushButton_TRANSLATE = QPushButton(self.groupBox)
         self.pushButton_TRANSLATE.setObjectName(u"pushButton_TRANSLATE")
         self.pushButton_TRANSLATE.setEnabled(False)
         font = QFont()
@@ -200,9 +199,15 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.pushButton_TRANSLATE)
 
+
+        self.horizontalLayout_6.addLayout(self.verticalLayout_4)
+
+
+        self.verticalLayout_5.addLayout(self.horizontalLayout_6)
+
         self.label_statusColor = QLabel(self.centralwidget)
         self.label_statusColor.setObjectName(u"label_statusColor")
-        self.label_statusColor.setGeometry(QRect(494, 120, 16, 16))
+        self.label_statusColor.setGeometry(QRect(650, 120, 16, 16))
         self.label_statusColor.setStyleSheet(u"border-radius: 8px;\n"
 "color: white;\n"
 "\n"
@@ -210,21 +215,21 @@ class Ui_MainWindow(object):
 "background-color: rgb(255, 255, 0);\n"
 "background-color: rgb(255, 0, 0);\n"
 "")
-        self.layoutWidget2 = QWidget(self.centralwidget)
-        self.layoutWidget2.setObjectName(u"layoutWidget2")
-        self.layoutWidget2.setGeometry(QRect(10, 10, 511, 86))
-        self.verticalLayout = QVBoxLayout(self.layoutWidget2)
+        self.layoutWidget = QWidget(self.centralwidget)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(10, 10, 661, 86))
+        self.verticalLayout = QVBoxLayout(self.layoutWidget)
         self.verticalLayout.setObjectName(u"verticalLayout")
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.lineEdit_fromUI_path = QLineEdit(self.layoutWidget2)
+        self.lineEdit_fromUI_path = QLineEdit(self.layoutWidget)
         self.lineEdit_fromUI_path.setObjectName(u"lineEdit_fromUI_path")
         self.lineEdit_fromUI_path.setReadOnly(True)
 
         self.horizontalLayout.addWidget(self.lineEdit_fromUI_path)
 
-        self.toolButton_select_fromUIpath = QToolButton(self.layoutWidget2)
+        self.toolButton_select_fromUIpath = QToolButton(self.layoutWidget)
         self.toolButton_select_fromUIpath.setObjectName(u"toolButton_select_fromUIpath")
 
         self.horizontalLayout.addWidget(self.toolButton_select_fromUIpath)
@@ -234,19 +239,19 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4 = QHBoxLayout()
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
-        self.lineEdit_fromLangCode = QLineEdit(self.layoutWidget2)
+        self.lineEdit_fromLangCode = QLineEdit(self.layoutWidget)
         self.lineEdit_fromLangCode.setObjectName(u"lineEdit_fromLangCode")
         self.lineEdit_fromLangCode.setEnabled(False)
         font1 = QFont()
         font1.setFamily(u"MS Shell Dlg 2")
         font1.setPointSize(10)
-        font1.setItalic(True)
+        font1.setItalic(False)
         self.lineEdit_fromLangCode.setFont(font1)
         self.lineEdit_fromLangCode.setAlignment(Qt.AlignCenter)
 
         self.horizontalLayout_4.addWidget(self.lineEdit_fromLangCode)
 
-        self.lineEdit_toLangCode = QLineEdit(self.layoutWidget2)
+        self.lineEdit_toLangCode = QLineEdit(self.layoutWidget)
         self.lineEdit_toLangCode.setObjectName(u"lineEdit_toLangCode")
         self.lineEdit_toLangCode.setEnabled(False)
         self.lineEdit_toLangCode.setFont(font1)
@@ -254,7 +259,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.lineEdit_toLangCode)
 
-        self.toolButton_showLanguages = QToolButton(self.layoutWidget2)
+        self.toolButton_showLanguages = QToolButton(self.layoutWidget)
         self.toolButton_showLanguages.setObjectName(u"toolButton_showLanguages")
         self.toolButton_showLanguages.setEnabled(False)
         self.toolButton_showLanguages.setStyleSheet(u"")
@@ -264,7 +269,7 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_4.addWidget(self.toolButton_showLanguages)
 
-        self.toolButton_confirmLangCodes = QToolButton(self.layoutWidget2)
+        self.toolButton_confirmLangCodes = QToolButton(self.layoutWidget)
         self.toolButton_confirmLangCodes.setObjectName(u"toolButton_confirmLangCodes")
         self.toolButton_confirmLangCodes.setEnabled(False)
 
@@ -275,14 +280,14 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.lineEdit_toUIpath = QLineEdit(self.layoutWidget2)
+        self.lineEdit_toUIpath = QLineEdit(self.layoutWidget)
         self.lineEdit_toUIpath.setObjectName(u"lineEdit_toUIpath")
         self.lineEdit_toUIpath.setEnabled(False)
         self.lineEdit_toUIpath.setReadOnly(True)
 
         self.horizontalLayout_2.addWidget(self.lineEdit_toUIpath)
 
-        self.toolButton_select_toUIpath = QToolButton(self.layoutWidget2)
+        self.toolButton_select_toUIpath = QToolButton(self.layoutWidget)
         self.toolButton_select_toUIpath.setObjectName(u"toolButton_select_toUIpath")
         self.toolButton_select_toUIpath.setEnabled(False)
 
@@ -294,7 +299,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(MainWindow)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 540, 21))
+        self.menubar.setGeometry(QRect(0, 0, 680, 21))
         self.menuMen = QMenu(self.menubar)
         self.menuMen.setObjectName(u"menuMen")
         self.menuDili_De_i_tir = QMenu(self.menuMen)

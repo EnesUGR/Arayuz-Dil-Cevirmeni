@@ -238,7 +238,7 @@ if __name__ == '__main__':
     app.setApplicationName("Arayüz Dil Çevirmeni")
     app.setOrganizationName("Enes Uğur")
     app.setOrganizationDomain("https://www.enesugur.ml/")
-    app.setApplicationVersion("1.0.0")
+    app.setApplicationVersion("1.1.0")
     win = UI_TranslatorApp()
     win.show()
     sys.exit(app.exec_())
