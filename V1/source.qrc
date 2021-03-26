@@ -1,5 +1,7 @@
 <RCC>
   <qresource prefix="icons">
+    <file>img/icons8_manual_page_rotation_64px.png</file>
+    <file>img/google_translate_96px.png</file>
     <file>img/languages.png</file>
     <file>img/book-guide-icon.png</file>
     <file>img/ui-translator.ico</file>
