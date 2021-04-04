@@ -38,6 +38,7 @@ class AutoUpdateCheck_Github:
 			self.result["Up_Version"] = r.text.split("\n")[0]
 			if self.userVersion != self.result["Up_Version"]:
 				self.result["isitUptoDate"] = False
+				print(self.rawUrl)
 			else:
 				self.result["isitUptoDate"] = True			
 			return self.result
