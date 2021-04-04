@@ -47,6 +47,8 @@ class AutoUpdateCheck_Github:
 			self.result["error"] = "ConnectionError"
 			return self.result
 
+if __name__ != "__main__":
+	pass
 
 # a = AutoUpdateCheck_Github("0.0.0","EnesUGR","deneme")
 # print(a.rawUrl)

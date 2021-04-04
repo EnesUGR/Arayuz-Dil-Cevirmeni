@@ -1,0 +1,2 @@
+translation dosyasýný oluþturduktan sonra otomatik pyuic ile çevirilmiþ halini de ekle.
+Elemanlarý listwidgete ekleyerek düzenleme de yapýlabilir. Bu sayfayý bozmadan yeni sayfa olarak.

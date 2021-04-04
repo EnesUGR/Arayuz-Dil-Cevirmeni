@@ -4,10 +4,10 @@ from PySide2.QtWidgets import QMainWindow, QApplication, QFileDialog, QMessageBo
 from googletrans import Translator, LANGUAGES
 from threading import Thread
 
-from AutoUpdate_module import AutoUpdateCheck_Github
-from app_python import Ui_MainWindow
-from langs_page import LangsPage
-from msgModule import SpecialMessageBox
+from .AutoUpdate_module import AutoUpdateCheck_Github
+from .app_python import Ui_MainWindow
+from .langs_page import LangsPage
+from .msgModule import SpecialMessageBox
 
 
 
