@@ -12,7 +12,7 @@ from Languages import app_translation_en_python, langs_page_translation_en_pytho
 
 
 
-VERSION = "1.2.1"
+VERSION = "1.2.2"
 class UI_TranslatorApp(QMainWindow):
 	def __init__(self):
 		super(UI_TranslatorApp, self).__init__()
@@ -51,6 +51,7 @@ class UI_TranslatorApp(QMainWindow):
 		self.ui.pushButton_nextText.clicked.connect(self.read_xml)
 		self.ui.pushButton_TRANSLATE.clicked.connect(self.confirmed_translate)
 		self.ui.pushButton_page2_translate.clicked.connect(self.translator_page)
+		self.ui.toolButton_sendTranslator.clicked.connect(self.sendTranslator)
 
 		self.ui.action_newTranslate.triggered.connect(self.reset_for_newTranslate)
 		self.ui.action_guide.triggered.connect(lambda: webbrowser.open("https://www.enesugur.ml")) #Sonra YouTube videosu konulabilir.
@@ -120,6 +121,7 @@ class UI_TranslatorApp(QMainWindow):
 					self.ui.spinBox_nowTextOrder.setEnabled(1)
 					self.ui.spinBox_totaTextNumber.setEnabled(1)
 					self.ui.pushButton_nextText.setEnabled(1)
+					self.ui.toolButton_sendTranslator.setEnabled(1)
 					Thread(target=self.read_xml()).start()
 					self.ui.label_statusColor.setToolTip("Çevirinizi Yapabilirsiniz.")
 					self.ui.lineEdit_fromLangCode.setEnabled(0)
@@ -169,6 +171,7 @@ class UI_TranslatorApp(QMainWindow):
 			self.ui.plainTextEdit_fromLangText.clear()
 			self.ui.spinBox_nowTextOrder.clear()
 			self.ui.pushButton_nextText.setEnabled(0)
+			self.ui.toolButton_sendTranslator.setEnabled(0)
 			self.set_texteditwidgets()
 			return None
 		print(self.no)
@@ -217,6 +220,20 @@ class UI_TranslatorApp(QMainWindow):
 				""")
 			self.ui.label_statusColor.setToolTip("Çeviriniz Başarıyla Tamamlandı. Ctrl+R İle Yeni Yapabilirsiniz.")
 			startfile("/".join(self.ui.lineEdit_toUIpath.text().split("/")[0:-1])+"/")
+	
+
+	def sendTranslator(self):
+		self.ui.stackedWidget.setCurrentIndex(1)
+		src_lang = self.ui.lineEdit_fromLangCode.text()
+		to_lang = self.ui.lineEdit_toLangCode.text()
+		text = self.ui.plainTextEdit_fromLangText.toPlainText()
+		self.ui.lineEdit_page2_fromCode.setText(src_lang)
+		self.ui.lineEdit_page2_toCode.setText(to_lang)
+		self.ui.textEdit_page2_fromText.setText(text)
+		self.translator_page()
+		self.ui.textEdit_page2_toText.copy()
+
+
 
 
 	def reset_for_newTranslate(self):
@@ -237,6 +254,7 @@ class UI_TranslatorApp(QMainWindow):
 		self.ui.spinBox_nowTextOrder.setEnabled(0)
 		self.ui.spinBox_totaTextNumber.setEnabled(0)
 		self.ui.pushButton_nextText.setEnabled(0)
+		self.ui.toolButton_sendTranslator.setEnabled(0)
 		self.ui.textEdit_fromLangTexts.setEnabled(0)
 		self.ui.textEdit_toLangTexts.setEnabled(0)
 		self.ui.pushButton_TRANSLATE.setEnabled(0)

@@ -224,6 +224,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_3.addWidget(self.pushButton_backText)
 
+        self.toolButton_sendTranslator = QToolButton(self.groupBox)
+        self.toolButton_sendTranslator.setObjectName(u"toolButton_sendTranslator")
+        self.toolButton_sendTranslator.setEnabled(False)
+
+        self.horizontalLayout_3.addWidget(self.toolButton_sendTranslator)
+
         self.spinBox_nowTextOrder = QSpinBox(self.groupBox)
         self.spinBox_nowTextOrder.setObjectName(u"spinBox_nowTextOrder")
         self.spinBox_nowTextOrder.setEnabled(False)
@@ -516,6 +522,13 @@ class Ui_MainWindow(object):
         self.plainTextEdit_toLangText.setToolTip(QCoreApplication.translate("MainWindow", u"G\u00f6rd\u00fc\u011f\u00fcn\u00fcz Textin Translatesini Buraya Girin ve 'Next' Butonuna Bas\u0131n.", None))
 #endif // QT_CONFIG(tooltip)
         self.pushButton_backText.setText(QCoreApplication.translate("MainWindow", u"Back", None))
+#if QT_CONFIG(tooltip)
+        self.toolButton_sendTranslator.setToolTip(QCoreApplication.translate("MainWindow", u"Ctrl+Shift+Return", None))
+#endif // QT_CONFIG(tooltip)
+        self.toolButton_sendTranslator.setText(QCoreApplication.translate("MainWindow", u">>", None))
+#if QT_CONFIG(shortcut)
+        self.toolButton_sendTranslator.setShortcut(QCoreApplication.translate("MainWindow", u"Ctrl+Shift+Return", None))
+#endif // QT_CONFIG(shortcut)
 #if QT_CONFIG(tooltip)
         self.spinBox_nowTextOrder.setToolTip(QCoreApplication.translate("MainWindow", u"Order of Current Text", None))
 #endif // QT_CONFIG(tooltip)

@@ -315,6 +315,22 @@ background-color: rgb(255, 0, 0);
                 </widget>
                </item>
                <item>
+                <widget class="QToolButton" name="toolButton_sendTranslator">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="toolTip">
+                  <string>Ctrl+Shift+Return</string>
+                 </property>
+                 <property name="text">
+                  <string>&gt;&gt;</string>
+                 </property>
+                 <property name="shortcut">
+                  <string>Ctrl+Shift+Return</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
                 <widget class="QSpinBox" name="spinBox_nowTextOrder">
                  <property name="enabled">
                   <bool>false</bool>

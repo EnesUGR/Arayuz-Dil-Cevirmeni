@@ -31,6 +31,7 @@ class Ui_MainWindow(object):
         self.action_selectTR.setIcon(icon1)
         self.action_selectEN = QAction(MainWindow)
         self.action_selectEN.setObjectName(u"action_selectEN")
+        self.action_selectEN.setCheckable(True)
         self.action_selectEN.setEnabled(True)
         icon2 = QIcon()
         icon2.addFile(u":/icons/img/english.png", QSize(), QIcon.Normal, QIcon.Off)
@@ -223,6 +224,12 @@ class Ui_MainWindow(object):
         self.pushButton_backText.setEnabled(False)
 
         self.horizontalLayout_3.addWidget(self.pushButton_backText)
+
+        self.toolButton_sendTranslator = QToolButton(self.groupBox)
+        self.toolButton_sendTranslator.setObjectName(u"toolButton_sendTranslator")
+        self.toolButton_sendTranslator.setEnabled(False)
+
+        self.horizontalLayout_3.addWidget(self.toolButton_sendTranslator)
 
         self.spinBox_nowTextOrder = QSpinBox(self.groupBox)
         self.spinBox_nowTextOrder.setObjectName(u"spinBox_nowTextOrder")
@@ -516,6 +523,7 @@ class Ui_MainWindow(object):
         self.plainTextEdit_toLangText.setToolTip(QCoreApplication.translate("MainWindow", u"G\u00f6rd\u00fc\u011f\u00fcn\u00fcz Metinin \u00c7evirisini Buraya Girin ve 'Sonraki' Butonuna Bas\u0131n.", None))
 #endif // QT_CONFIG(tooltip)
         self.pushButton_backText.setText(QCoreApplication.translate("MainWindow", u"\u00d6nceki", None))
+        self.toolButton_sendTranslator.setText(QCoreApplication.translate("MainWindow", u">>", None))
 #if QT_CONFIG(tooltip)
         self.spinBox_nowTextOrder.setToolTip(QCoreApplication.translate("MainWindow", u"\u015euanki Metinin  S\u0131ras\u0131", None))
 #endif // QT_CONFIG(tooltip)

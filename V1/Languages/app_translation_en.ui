@@ -26,7 +26,7 @@
    <string/>
   </property>
   <property name="windowIcon">
-   <iconset resource="source.qrc">
+   <iconset resource="../source.qrc">
     <normaloff>:/icons/img/ui-translator.ico</normaloff>:/icons/img/ui-translator.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -36,7 +36,7 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <widget class="QWidget" name="stackedWidgetPage1" native="true">
+      <widget class="QWidget" name="stackedWidgetPage1">
        <widget class="QLabel" name="label_statusColor">
         <property name="geometry">
          <rect>
@@ -165,7 +165,7 @@ background-color: rgb(255, 0, 0);
               <string/>
              </property>
              <property name="icon">
-              <iconset resource="source.qrc">
+              <iconset resource="../source.qrc">
                <normaloff>:/icons/img/languages.png</normaloff>:/icons/img/languages.png</iconset>
              </property>
             </widget>
@@ -311,6 +311,22 @@ background-color: rgb(255, 0, 0);
                  </property>
                  <property name="text">
                   <string>Back</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_sendTranslator">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="toolTip">
+                  <string>Ctrl+Shift+Return</string>
+                 </property>
+                 <property name="text">
+                  <string>&gt;&gt;</string>
+                 </property>
+                 <property name="shortcut">
+                  <string>Ctrl+Shift+Return</string>
                  </property>
                 </widget>
                </item>
@@ -512,7 +528,7 @@ border: none;</string>
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="stackedWidgetPage2" native="true">
+      <widget class="QWidget" name="stackedWidgetPage2">
        <layout class="QVBoxLayout" name="verticalLayout_9">
         <item>
          <layout class="QVBoxLayout" name="verticalLayout_8">
@@ -582,7 +598,7 @@ border: none;</string>
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="source.qrc">
+               <iconset resource="../source.qrc">
                 <normaloff>:/icons/img/languages.png</normaloff>:/icons/img/languages.png</iconset>
               </property>
              </widget>
@@ -663,7 +679,7 @@ border: none;</string>
                  <string>Translate</string>
                 </property>
                 <property name="icon">
-                 <iconset resource="source.qrc">
+                 <iconset resource="../source.qrc">
                   <normaloff>:/icons/img/google_translate_96px.png</normaloff>:/icons/img/google_translate_96px.png</iconset>
                 </property>
                 <property name="iconSize">
@@ -745,7 +761,7 @@ border: none;</string>
   </widget>
   <action name="action_selectTR">
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/turkey.png</normaloff>:/icons/img/turkey.png</iconset>
    </property>
    <property name="text">
@@ -757,7 +773,7 @@ border: none;</string>
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/english.png</normaloff>:/icons/img/english.png</iconset>
    </property>
    <property name="text">
@@ -766,7 +782,7 @@ border: none;</string>
   </action>
   <action name="action_about">
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/information.ico</normaloff>:/icons/img/information.ico</iconset>
    </property>
    <property name="text">
@@ -775,7 +791,7 @@ border: none;</string>
   </action>
   <action name="action_exit">
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/exit3.ico</normaloff>:/icons/img/exit3.ico</iconset>
    </property>
    <property name="text">
@@ -787,7 +803,7 @@ border: none;</string>
     <bool>true</bool>
    </property>
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/google-translate-icon.png</normaloff>:/icons/img/google-translate-icon.png</iconset>
    </property>
    <property name="text">
@@ -799,7 +815,7 @@ border: none;</string>
   </action>
   <action name="action_guide">
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/book-guide-icon.png</normaloff>:/icons/img/book-guide-icon.png</iconset>
    </property>
    <property name="text">
@@ -825,7 +841,7 @@ border: none;</string>
   </action>
   <action name="action_page">
    <property name="icon">
-    <iconset resource="source.qrc">
+    <iconset resource="../source.qrc">
      <normaloff>:/icons/img/icons8_manual_page_rotation_64px.png</normaloff>:/icons/img/icons8_manual_page_rotation_64px.png</iconset>
    </property>
    <property name="text">
@@ -848,7 +864,7 @@ border: none;</string>
   </action>
  </widget>
  <resources>
-  <include location="source.qrc"/>
+  <include location="../source.qrc"/>
  </resources>
  <connections/>
 </ui>
